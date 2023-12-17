@@ -72,12 +72,14 @@ Run this command in your SSH session:
 
 wget https://github.com/sbtoonz/k1_klipper/raw/master/InstallKlipper.sh && sh InstallKlipper.sh
 
-Now you can proceed with flashing the M5P:
-Please follow these steps 
+### Now you can proceed with flashing the M5P:
+## Please follow these steps 
 
 In your SSH Session 
+```
 cd ~/klipper
 make menuconfig
+```
 
 
 Use the following options:
