@@ -51,20 +51,23 @@ Once this image is written do not forget to setup the system.cfg file to configu
 Insert the SD card into the receptacle on the M5P
 
 Wiring The RS232 Adapters: 
-RS232 <-> Bed PCB Cable:
-TX → White
-RX → Green
-GND → Gnd (Take note this ground must be shared to the Ground for the power as well as to the RS232 dongle)
-
-RS232 <-> Toolhead PCB Cable:
-RX → White
-TX → Green
-GND → Gnd (Take note this ground must be shared to the Ground for the power as well as to the RS232 dongle)
-
-The Rs232 adapters require a shared ground for the device they are talking to please make sure the grounds they share are appropriate (IE Bed cable ground should be shared at RGB1 header. Toolhead ground should be shared at board main ground) 
+|RS232: <-|->Bed PCB Cable:|
+|-------|--------------|
+|TX |→ White|
+|RX |→ Green|
+|GND |→ Gnd (Take note this ground must be shared to the Ground for the power as well as to the RS232 dongle)|
 
 
-At this point you should be ready to boot up your M5P and let it load for the first time. After approx 5-10 min you should see the M5p on your wifi (as long as you did not forget to use the system.cfg before ejecting the SDCard) 
+|RS232: <-|->Bed PCB Cable:|
+|---------|----------------|
+|RX |→ White|
+|TX |→ Green|
+|GND |→ Gnd (Take note this ground must be shared to the Ground for the power as well as to the RS232 dongle)|
+
+<span style="color:red;"> The Rs232 adapters require a shared ground for the device they are talking to please make sure the grounds they share are appropriate (IE Bed cable ground should be shared at RGB1 header. Toolhead ground should be shared at board main ground) </span>
+
+
+#### At this point you should be ready to boot up your M5P and let it load for the first time. After approx 5-10 min you should see the M5p on your wifi (as long as you did not forget to use the system.cfg before ejecting the SDCard) 
 
 Once you can see this machine on your network you need to SSH into it in order to setup the klipper patches for K1 and flash the M5P with updated klipper.bin
 
