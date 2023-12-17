@@ -81,35 +81,44 @@ make menuconfig
 
 
 Use the following options:
+```
 Enable Extra Low Level Options: X
 STM32 architecture
 STM32G0B1 SOC
 8kib bootloader
 8mhz crystal
 USB On PA11/PA12
+```
 
 Press Q to exit the menu config and save the configuration
 
 Then type:
+```
 make
-
+```
 And press enter.
 
 Once this is complete run:
+```
 ls /dev/serial/by-id/*
-
+```
 Take note of the path it reports it should be something like:
+```
 /dev/serial/by-id/usb-123-port0
-
+```
 
 Then run:
+```
 sudo service klipper stop
 make flash FLASH_DEVICE=/dev/serial/by-id/the-path-you-found-in-the-last-step
 sudo service klipper start
+```
 
-Once you have completed these steps again run the 
+Once you have completed these steps again run the Command :
+```
 ls /dev/serial/by-id/*
-Command 
+```
+
 And take note of the path it returns (it can vary after flashing the firmware)
 
 Use this path in your printer.cfg 
