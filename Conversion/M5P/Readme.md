@@ -17,9 +17,13 @@
 
 Remove the bottom Metal cover from your K1 (this is the 4x rubber feet and 2x small silver m3 screws)
 CAREFULLY  Remove the screws from the main board and unscrew the terminal plugs for the power/hotbed
+
 Once you can move the mainboard away from the chassis slightly you can start removing the glue on all the plugs. I used a pair of sharp point tweezers to accomplish this job. You need to be very careful during this step 
 Start undoing each connector on the Creality Mainboard VERY carefully making sure not to damage any connectors
 Once you have all connectors and cables free from the Creality mainboard you can set this aside and start preparing your M5P
+
+Should look something like this:
+![Creality_Board](https://github.com/K1-Klipper/K1-Max-Manta-Conversion/blob/main/Conversion/M5P/Creality_Board_Glue.PNG?raw=true)
 
 
 ## M5P:
@@ -27,7 +31,9 @@ Once you have all connectors and cables free from the Creality mainboard you can
 ### Physical Setup of M5P:
 
 Refer to the image below for jumpers that you need to install on the M5P:
+![M5P_Jumpers](https://github.com/K1-Klipper/K1-Max-Manta-Conversion/blob/main/Conversion/M5P/m5p_jumper_picture.PNG?raw=true)
 
+![M5P_Fan_Jumpers](https://github.com/K1-Klipper/K1-Max-Manta-Conversion/blob/main/Conversion/M5P/fan_jumpers.PNG?raw=true)
 
 
 Once you have these jumpers installed you can proceed to screw the M5p into the printed adapter for your K1
@@ -64,10 +70,10 @@ Wiring The RS232 Adapters:
 |TX |→ Green|
 |GND |→ Gnd (Take note this ground must be shared to the Ground for the power as well as to the RS232 dongle)|
 
-<span style="color:red;"> The Rs232 adapters require a shared ground for the device they are talking to please make sure the grounds they share are appropriate (IE Bed cable ground should be shared at RGB1 header. Toolhead ground should be shared at board main ground) </span>
+The Rs232 adapters require a shared ground for the device they are talking to please make sure the grounds they share are appropriate (IE Bed cable ground should be shared at RGB1 header. Toolhead ground should be shared at board main ground) 
 
 
-#### At this point you should be ready to boot up your M5P and let it load for the first time. After approx 5-10 min you should see the M5p on your wifi (as long as you did not forget to use the system.cfg before ejecting the SDCard) 
+At this point you should be ready to boot up your M5P and let it load for the first time. After approx 5-10 min you should see the M5p on your wifi (as long as you did not forget to use the system.cfg before ejecting the SDCard) 
 
 Once you can see this machine on your network you need to SSH into it in order to setup the klipper patches for K1 and flash the M5P with updated klipper.bin
 
