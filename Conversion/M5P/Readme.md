@@ -57,7 +57,7 @@ Once this image is written do not forget to setup the system.cfg file to configu
 Insert the SD card into the receptacle on the M5P
 
 Wiring The RS232 Adapters: 
-|RS232: <-|->Bed PCB Cable:|
+|RS232: <-|->Toolhead PCB Cable:|
 |-------|--------------|
 |TX |→ White|
 |RX |→ Green|
@@ -69,6 +69,7 @@ Wiring The RS232 Adapters:
 |RX |→ Green|
 |TX |→ White|
 |GND |→ Gnd (Take note this ground must be shared to the Ground for the power as well as to the RS232 dongle)|
+|N/A | Yellow (ignore)|
 
 The Rs232 adapters require a shared ground for the device they are talking to please make sure the grounds they share are appropriate (IE Bed cable ground should be shared at RGB1 header. Toolhead ground should be shared at board main ground) 
 
