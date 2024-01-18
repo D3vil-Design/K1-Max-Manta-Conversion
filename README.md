@@ -4,4 +4,4 @@
 
 Video of printer operating on M5P:
 
-<video src="https://cdn.discordapp.com/attachments/1179179750208577636/1197590136318341230/IMG_3111.mov" />
+<video src="https://discord.com/channels/1154500511777693819/1179179750208577636/1197590136662265968" width="300"/>
