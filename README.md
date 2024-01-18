@@ -4,4 +4,8 @@
 
 Video of printer operating on M5P:
 
-<video src="https://discord.com/channels/1154500511777693819/1179179750208577636/1197590136662265968" width="300"/>
+
+
+
+https://github.com/K1-Klipper/K1-Max-Manta-Conversion/assets/67915879/66ab00a4-9d4a-4fb8-99a1-330249be4a67
+
