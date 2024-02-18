@@ -46,6 +46,9 @@ When wiring the M5p the connections are as follows:
 Toolhead GND goes to the boards power input GND
 
 
+![image](https://github.com/Bomberski/K1-Max-Manta-Conversion/assets/51887282/1b3a5fe6-4ff3-439c-b254-a6857c3184e5)
+
+
 Setting up the CB1:
 Head over to : https://github.com/bigtreetech/CB1/releases
 Download the CB1_Debian11_Klipper_kernel*.***.img.xz (Make sure it is not the one that says minimal)
